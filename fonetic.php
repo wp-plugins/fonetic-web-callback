@@ -2,14 +2,14 @@
 
 /**
  * @package Fonetic Web Callback
- * @version 1.0.3
+ * @version 1.0.5
  */
 
 /*
    Plugin Name: Fonetic Web Callback
    Plugin URI: http://wordpress.org/extend/plugins/fonetic/
    Description: Fonetic is a web call feature for your website that allows your visitors to be called back for free. Get a real leverage for your online conversions !
-   Version: 1.0
+   Version: 1.0.5
    Author: <a href="http://www.fonetic.fr/">Fonetic</a>, <a href="http://www.netiva.fr/">Netiva</a>
    Author URI: http://fonetic.fr/
 */
@@ -107,11 +107,11 @@ class Fonetic_Admin {
 		<img style="float:right;" src="'.FONETIC_URL.'images/webcallback.png" />
 		'.__('Description', 'fonetic').'
 		<p>
-			<a href="'.FONETIC_URL.'Fonetic-Wordpress-Screenshot-1.jpg" target="_BLANK"><img src="'.FONETIC_URL.'Fonetic-Wordpress-Screenshot-1.jpg" style="width:200px;" /></a>
-			<a href="'.FONETIC_URL.'Fonetic-Wordpress-Screenshot-2.jpg" target="_BLANK"><img src="'.FONETIC_URL.'Fonetic-Wordpress-Screenshot-2.jpg" style="width:200px;" /></a>
-			<a href="'.FONETIC_URL.'Fonetic-Wordpress-Screenshot-3.jpg" target="_BLANK"><img src="'.FONETIC_URL.'Fonetic-Wordpress-Screenshot-3.jpg" style="width:200px;" /></a>
-			<a href="'.FONETIC_URL.'Fonetic-Wordpress-Screenshot-4.jpg" target="_BLANK"><img src="'.FONETIC_URL.'Fonetic-Wordpress-Screenshot-4.jpg" style="width:200px;" /></a>
-			<a href="'.FONETIC_URL.'Fonetic-Wordpress-Screenshot-5.jpg" target="_BLANK"><img src="'.FONETIC_URL.'Fonetic-Wordpress-Screenshot-5.jpg" style="width:200px;" /></a>
+			<a href="'.FONETIC_URL.'screenshot-1.jpg" target="_BLANK"><img src="'.FONETIC_URL.'Fonetic-Wordpress-Screenshot-1.jpg" style="width:200px;" /></a>
+			<a href="'.FONETIC_URL.'screenshot-2.jpg" target="_BLANK"><img src="'.FONETIC_URL.'Fonetic-Wordpress-Screenshot-2.jpg" style="width:200px;" /></a>
+			<a href="'.FONETIC_URL.'screenshot-3.jpg" target="_BLANK"><img src="'.FONETIC_URL.'Fonetic-Wordpress-Screenshot-3.jpg" style="width:200px;" /></a>
+			<a href="'.FONETIC_URL.'screenshot-4.jpg" target="_BLANK"><img src="'.FONETIC_URL.'Fonetic-Wordpress-Screenshot-4.jpg" style="width:200px;" /></a>
+			<a href="'.FONETIC_URL.'screenshot-5.jpg" target="_BLANK"><img src="'.FONETIC_URL.'Fonetic-Wordpress-Screenshot-5.jpg" style="width:200px;" /></a>
 		</p>';
 	}
 

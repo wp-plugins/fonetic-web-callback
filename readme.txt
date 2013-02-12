@@ -4,7 +4,7 @@ Donate link: http://netiva.fr
 Tags: fonetic, callback, chat, contact, customer
 Requires at least: 3.0
 Tested up to: 3.5
-Stable tag: 1.0.2
+Stable tag: 1.0.5
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -43,28 +43,38 @@ Coming soon :)
 
 == Screenshots ==
 
-1. Fonetic-Wordpress-Screenshot-1.jpg
-2. Fonetic-Wordpress-Screenshot-2.jpg
-3. Fonetic-Wordpress-Screenshot-3.jpg
-4. Fonetic-Wordpress-Screenshot-4.jpg
-5. Fonetic-Wordpress-Screenshot-5.jpg
+1. Edit configuration
+2. Documentation
+3. Fonetic Callback Widget
+4. Fonetic Dashboard
+5. Fonetic Dashboard
 
 == Changelog ==
 
+= 1.0.5 =
+*	Upadte screenshot and comments
+*	Fix screenshot path
+
 = 1.0.4 =
-* Fix mysql error.
+*	Fix mysql error.
 
 = 1.0.2 =
-* Fix plugin path.
+*	Fix plugin path.
 
 = 1.0.1 =
-* Add screenshot.
-* Update Readme.txt.
+*	Add screenshot.
+*	Update Readme.txt.
 
 = 1.0.0 =
-* Initial Release.
+*	Initial Release.
 
 == Upgrade Notice ==
 
 = 1.0.0 =
-* Initial Release.
+*	Initial Release.
+
+== Links ==
+
+*	[Project Homepage](http://fonetic.fr/)
+*	[Support](http://fonetic.fr/)
+*	[Team](http://netiva.fr/)
