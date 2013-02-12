@@ -51,6 +51,9 @@ Coming soon :)
 
 == Changelog ==
 
+= 1.0.4 =
+* Fix mysql error.
+
 = 1.0.2 =
 * Fix plugin path.
 

@@ -2,7 +2,7 @@
 
 /**
  * @package Fonetic Web Callback
- * @version 1.0.2
+ * @version 1.0.3
  */
 
 /*
@@ -128,7 +128,7 @@ class Fonetic_Admin {
 		}
 
 		// récupération des information en base de données
-		$sql = $this->wpdb->prepare("SELECT * FROM ".$this->table_name." LIMIT 1");
+		$sql = $this->wpdb->query("SELECT * FROM ".$this->table_name." LIMIT 1");
 		$data = $this->wpdb->get_results($sql);
 
 		echo '<h1>'.$this->title.' - '.__('Configuration', 'fonetic').'</h1>
