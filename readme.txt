@@ -20,9 +20,11 @@ FONETIC commercial & service website is currently being translated in english. P
 Please note that connections are possible with 233 countries.
 
 Live demo:
+
 * [Wordpress 3.5](http://wordpress35.netiva.fr/)
 
 Links:
+
 * [Project Homepage](http://fonetic.fr/)
 * [Support](http://fonetic.fr/)
 * [Team](http://netiva.fr/)

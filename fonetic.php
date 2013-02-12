@@ -35,8 +35,8 @@
 defined('WP_PLUGIN_URL') or die('Restricted access');
 
 define('FONETIC_HOME', "http://fonetic.fr/");
-define('FONETIC_PATH', ABSPATH.PLUGINDIR."/fonetic/");
-define('FONETIC_URL', WP_PLUGIN_URL."/fonetic/");
+define('FONETIC_PATH', ABSPATH.PLUGINDIR."/fonetic-web-callback/");
+define('FONETIC_URL', WP_PLUGIN_URL."/fonetic-web-callback/");
 
 //==============================================================================
 // Admin page Routes and Callbacks
