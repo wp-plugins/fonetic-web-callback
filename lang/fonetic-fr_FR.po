@@ -1,0 +1,87 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: fonetic wordpress\n"
+"POT-Creation-Date: 2013-02-10 13:18+0100\n"
+"PO-Revision-Date: 2013-02-10 13:18+0100\n"
+"Last-Translator: Netiva <contact@netiva.fr>\n"
+"Language-Team: Netiva <contact@netiva.fr>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: C:\\www\\web\\wordpress\\test-version\\3.5\\wp-content"
+"\\plugins\\fonetic\n"
+
+#: C:\www\web\wordpress\test-version\3.5\wp-content\plugins\fonetic/fonetic.php:100
+#: C:\www\web\wordpress\test-version\3.5\wp-content\plugins\fonetic/fonetic.php:134
+msgid "Configuration"
+msgstr "Configuration"
+
+#: C:\www\web\wordpress\test-version\3.5\wp-content\plugins\fonetic/fonetic.php:105
+msgid "Widget de mise en relation"
+msgstr "Widget de mise en relation"
+
+#: C:\www\web\wordpress\test-version\3.5\wp-content\plugins\fonetic/fonetic.php:108
+msgid "Description"
+msgstr ""
+"<h3>Fonetic en quelques mots</h3><p><strong>Le Web Callback est un service "
+"de rappel téléphonique instantané pour\tvotre site internet et ou signature "
+"mail.<br />Il offre une mise en relation\tgratuite et spontanée pour vos "
+"internautes.</strong></p><h3>Que peut apporter un Web Callback sur son site ?"
+"</h3><p>En phase d’achat, l’internaute recherche essentiellement un contact "
+"téléphonique.<br />\tDe plus, dans un contexte concurrentiel intense, un "
+"service client disponible\tpar téléphone est donc d’une importance "
+"stratégique pour une société en ligne.</p><p><u>Avantages pour le site "
+"internet :</u></p><ul>\t<li>- Le Web Callback augmente le taux de conversion "
+"et les ventes</li>\t<li>- Le Web Callback améliore votre service client et "
+"votre image</li>\t<li>- Le Web Callback qualifie vos prospects (email, "
+"téléphone)</li></ul><p><u>Avantages pour l'internaute :</u></p><ul>\t<li>- "
+"Le Web Callback est un gage de gratuité</li>\t<li>- Le Web Callback apporte "
+"l’assurance d’un service rapide (pas de serveur vocal)</li></ul>"
+
+#: C:\www\web\wordpress\test-version\3.5\wp-content\plugins\fonetic/fonetic.php:136
+msgid "Legende"
+msgstr ""
+"<h2>Enregistrement de votre widget</h2><p>1 - Inscrivez vous sur <a href="
+"\"http://fonetic.fr\">Fonetic.fr</a>, puis créez votre widget.</p><p>2 - "
+"Collez la portion de code de votre widget dans le champs ci-dessous:</p>"
+
+#: C:\www\web\wordpress\test-version\3.5\wp-content\plugins\fonetic/fonetic.php:139
+msgid "Enregistrer le widget"
+msgstr "Enregistrer le widget"
+
+#: C:\www\web\wordpress\test-version\3.5\wp-content\plugins\fonetic/fonetic.php:140
+msgid "Documentation"
+msgstr "Documentation"
+
+#: C:\www\web\wordpress\test-version\3.5\wp-content\plugins\fonetic/fonetic.php:147
+#, fuzzy
+msgid "Widget enregistré !"
+msgstr "Widget enregistré !"
+
+#~ msgid "Espace client"
+#~ msgstr "Espace client"
+
+#~ msgid "test"
+#~ msgstr ""
+#~ "\t\t<p><strong>Le Web Callback est un service de rappel téléphonique "
+#~ "instantané pour\t\t\tvotre site internet et ou signature mail.<br />Il "
+#~ "offre une mise en relation\t\t\tgratuite et spontanée pour vos "
+#~ "internautes.</strong></p>\t\t<h3>Que peut apporter un Web Callback sur "
+#~ "son site ?</h3>\t\t<p>En phase d’achat, l’internaute recherche "
+#~ "essentiellement un contact téléphonique.<br />\t\t\tDe plus, dans un "
+#~ "contexte concurrentiel intense, un service client disponible\t\t\tpar "
+#~ "téléphone est donc d’une importance stratégique pour une société en ligne."
+#~ "</p>\t\t<p><u>Avantages pour le site internet :</u></p>\t\t<ul>\t\t"
+#~ "\t<li>- Le Web Callback augmente le taux de conversion et les ventes</li>"
+#~ "\t\t\t<li>- Le Web Callback améliore votre service client et votre image</"
+#~ "li>\t\t\t<li>- Le Web Callback qualifie vos prospects (email, téléphone)</"
+#~ "li>\t\t</ul>\t\t<p><u>Avantages pour l'internaute :</u></p>\t\t<ul>\t\t"
+#~ "\t<li>- Le Web Callback est un gage de gratuité</li>\t\t\t<li>- Le Web "
+#~ "Callback apporte l’assurance d’un service rapide (pas de serveur vocal)</"
+#~ "li>\t\t</ul>\t\t<hr />\t\t<h2>Enregistrement de votre widget</h2>\t"
+#~ "\t<p>Collez la portion de code de votre widget dans le champs ci-dessous:"
+#~ "</p>"
