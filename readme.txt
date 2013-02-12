@@ -1,7 +1,7 @@
 ﻿=== Fonetic Web Callback ===
 Contributors: Netiva, Gregory Darche, Danny Coquerelle, Frank Brochard
 Donate link: http://netiva.fr
-Tags: fonetic, callback, chat, contact, customer
+Tags: fonetic, callback, webcallback, instant call, chat, contact, customer, conversion, widget, phone, call, click to call, analytics statistic
 Requires at least: 3.0
 Tested up to: 3.5
 Stable tag: 1.0.5
@@ -19,15 +19,17 @@ For the attention of our english users
 FONETIC commercial & service website is currently being translated in english. Please apologize for the inconvenience. However FONETIC’s widget (non-customizable fields) is already translated and available in the following languages : FR, EN, ES, DE, IT, CN, PT, FI, SE.
 Please note that connections are possible with 233 countries.
 
-Live demo:
+= Language =
+*	English
+*	French
 
-* [Wordpress 3.5](http://wordpress35.netiva.fr/)
+= Live demo =
+*	[Wordpress 3.5](http://wordpress35.netiva.fr/)
 
-Links:
-
-* [Project Homepage](http://fonetic.fr/)
-* [Support](http://fonetic.fr/)
-* [Team](http://netiva.fr/)
+= Links =
+*	[Project Homepage](http://fonetic.fr/)
+*	[Support](http://fonetic.fr/)
+*	[Team](http://netiva.fr/)
 
 == Installation ==
 
@@ -56,25 +58,19 @@ Coming soon :)
 *	Fix screenshot path
 
 = 1.0.4 =
-*	Fix mysql error.
+*	Fix mysql error
 
 = 1.0.2 =
-*	Fix plugin path.
+*	Fix plugin path
 
 = 1.0.1 =
 *	Add screenshot.
-*	Update Readme.txt.
+*	Update Readme.txt
 
 = 1.0.0 =
-*	Initial Release.
+*	Initial Release
 
 == Upgrade Notice ==
 
 = 1.0.0 =
-*	Initial Release.
-
-== Links ==
-
-*	[Project Homepage](http://fonetic.fr/)
-*	[Support](http://fonetic.fr/)
-*	[Team](http://netiva.fr/)
+*	Initial Release
