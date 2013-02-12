@@ -1,12 +1,12 @@
 ﻿<?php
 
 /**
- * @package fonetic
- * @version 1.0.1
+ * @package Fonetic Web Callback
+ * @version 1.0.2
  */
 
 /*
-   Plugin Name: Fonetic
+   Plugin Name: Fonetic Web Callback
    Plugin URI: http://wordpress.org/extend/plugins/fonetic/
    Description: Fonetic is a web call feature for your website that allows your visitors to be called back for free. Get a real leverage for your online conversions !
    Version: 1.0

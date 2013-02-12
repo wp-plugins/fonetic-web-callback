@@ -1,10 +1,10 @@
-﻿=== Fonetic ===
+﻿=== Fonetic Web Callback ===
 Contributors: Netiva, Gregory Darche, Danny Coquerelle, Frank Brochard
 Donate link: http://netiva.fr
 Tags: fonetic, callback, chat, contact, customer
 Requires at least: 3.0
 Tested up to: 3.5
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -51,18 +51,17 @@ Coming soon :)
 
 == Changelog ==
 
+= 1.0.2 =
+* Fix plugin path.
+
 = 1.0.1 =
 * Add screenshot.
-* Update Readme.txt
+* Update Readme.txt.
 
 = 1.0.0 =
 * Initial Release.
 
 == Upgrade Notice ==
-
-= 1.0.1 =
-* Add screenshot.
-* Update Readme.txt
 
 = 1.0.0 =
 * Initial Release.
