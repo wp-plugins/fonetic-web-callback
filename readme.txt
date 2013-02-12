@@ -2,7 +2,7 @@
 Contributors: Netiva, Gregory Darche, Danny Coquerelle, Frank Brochard
 Donate link: http://netiva.fr
 Tags: fonetic, callback, web callback, instant call, chat, contact, support, customer, conversion, widget, phone, call, click to call, analytics statistic, webmarketing, e-marketing, call center
-Requires at least: 3.0
+Requires at least: 3.5
 Tested up to: 3.5
 Stable tag: 1.0.5
 License: GPLv3

@@ -107,11 +107,11 @@ class Fonetic_Admin {
 		<img style="float:right;" src="'.FONETIC_URL.'images/webcallback.png" />
 		'.__('Description', 'fonetic').'
 		<p>
-			<a href="'.FONETIC_URL.'screenshot-1.jpg" target="_BLANK"><img src="'.FONETIC_URL.'Fonetic-Wordpress-Screenshot-1.jpg" style="width:200px;" /></a>
-			<a href="'.FONETIC_URL.'screenshot-2.jpg" target="_BLANK"><img src="'.FONETIC_URL.'Fonetic-Wordpress-Screenshot-2.jpg" style="width:200px;" /></a>
-			<a href="'.FONETIC_URL.'screenshot-3.jpg" target="_BLANK"><img src="'.FONETIC_URL.'Fonetic-Wordpress-Screenshot-3.jpg" style="width:200px;" /></a>
-			<a href="'.FONETIC_URL.'screenshot-4.jpg" target="_BLANK"><img src="'.FONETIC_URL.'Fonetic-Wordpress-Screenshot-4.jpg" style="width:200px;" /></a>
-			<a href="'.FONETIC_URL.'screenshot-5.jpg" target="_BLANK"><img src="'.FONETIC_URL.'Fonetic-Wordpress-Screenshot-5.jpg" style="width:200px;" /></a>
+			<a href="'.FONETIC_URL.'screenshot-1.jpg" target="_BLANK"><img src="'.FONETIC_URL.'screenshot-1.jpg" style="width:200px;" /></a>
+			<a href="'.FONETIC_URL.'screenshot-2.jpg" target="_BLANK"><img src="'.FONETIC_URL.'screenshot-2.jpg" style="width:200px;" /></a>
+			<a href="'.FONETIC_URL.'screenshot-3.jpg" target="_BLANK"><img src="'.FONETIC_URL.'screenshot-3.jpg" style="width:200px;" /></a>
+			<a href="'.FONETIC_URL.'screenshot-4.jpg" target="_BLANK"><img src="'.FONETIC_URL.'screenshot-4.jpg" style="width:200px;" /></a>
+			<a href="'.FONETIC_URL.'screenshot-5.jpg" target="_BLANK"><img src="'.FONETIC_URL.'screenshot-5.jpg" style="width:200px;" /></a>
 		</p>';
 	}
 
@@ -128,7 +128,7 @@ class Fonetic_Admin {
 		}
 
 		// récupération des information en base de données
-		$sql = $this->wpdb->query("SELECT * FROM ".$this->table_name." LIMIT 1");
+		$sql = $this->wpdb->prepare("SELECT * FROM ".$this->table_name." LIMIT 1");
 		$data = $this->wpdb->get_results($sql);
 
 		echo '<h1>'.$this->title.' - '.__('Configuration', 'fonetic').'</h1>
