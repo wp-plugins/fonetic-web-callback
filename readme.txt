@@ -1,7 +1,7 @@
 ﻿=== Fonetic Web Callback ===
 Contributors: Netiva, Gregory Darche, Danny Coquerelle, Frank Brochard
 Donate link: http://netiva.fr
-Tags: fonetic, callback, webcallback, instant call, chat, contact, customer, conversion, widget, phone, call, click to call, analytics statistic
+Tags: fonetic, callback, web callback, instant call, chat, contact, support, customer, conversion, widget, phone, call, click to call, analytics statistic, webmarketing, e-marketing, call center
 Requires at least: 3.0
 Tested up to: 3.5
 Stable tag: 1.0.5
@@ -54,8 +54,8 @@ Coming soon :)
 == Changelog ==
 
 = 1.0.5 =
-*	Upadte screenshot and comments
-*	Fix screenshot path
+*	Update screenshot and comments
+*	Fix screenshot path and file name
 
 = 1.0.4 =
 *	Fix mysql error
