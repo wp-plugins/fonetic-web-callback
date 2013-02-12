@@ -19,9 +19,20 @@ For the attention of our english users
 FONETIC commercial & service website is currently being translated in english. Please apologize for the inconvenience. However FONETIC’s widget (non-customizable fields) is already translated and available in the following languages : FR, EN, ES, DE, IT, CN, PT, FI, SE.
 Please note that connections are possible with 233 countries.
 
-= Language =
+= Plugin language =
 *	English
 *	French
+
+= Widget language =
+*	English
+*	French
+*	Spanish
+*	German
+*	Italian
+*	Chinese
+*	Portuguese
+*	Finnish
+*	Swedish
 
 = Live demo =
 *	[Wordpress 3.5](http://wordpress35.netiva.fr/)
