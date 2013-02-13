@@ -2,14 +2,14 @@
 
 /**
  * @package Fonetic Web Callback
- * @version 1.0.5
+ * @version 1.0.6
  */
 
 /*
    Plugin Name: Fonetic Web Callback
    Plugin URI: http://wordpress.org/extend/plugins/fonetic/
    Description: Fonetic is a web call feature for your website that allows your visitors to be called back for free. Get a real leverage for your online conversions !
-   Version: 1.0.5
+   Version: 1.0.6
    Author: <a href="http://www.fonetic.fr/">Fonetic</a>, <a href="http://www.netiva.fr/">Netiva</a>
    Author URI: http://fonetic.fr/
 */
@@ -128,8 +128,7 @@ class Fonetic_Admin {
 		}
 
 		// récupération des information en base de données
-		$sql = $this->wpdb->prepare("SELECT javascript FROM ".$this->table_name." LIMIT 1");
-		$data = $this->wpdb->get_results($sql);
+		$data = $this->wpdb->get_results("SELECT * FROM ".$this->table_name." LIMIT 1");
 
 		echo '<h1>'.$this->title.' - '.__('Configuration', 'fonetic').'</h1>
 		<hr />
@@ -153,8 +152,7 @@ class Fonetic_Admin {
 	//==============================================================================
 	function front_js(){
 
-		$sql = $this->wpdb->prepare("SELECT javascript FROM ".$this->table_name." LIMIT 1");
-		$data = $this->wpdb->get_results($sql);
+		$data = $this->wpdb->get_results("SELECT * FROM ".$this->table_name." LIMIT 1");
 
 		echo $data[0]->javascript."\r\n";
 	}
@@ -176,7 +174,37 @@ class Fonetic_Admin {
 			dbDelta($query);
 
 			$this->wpdb->insert($this->table_name, array(
-			    'javascript' => '',
+			'javascript' => "
+<!--Fonetic Widget-->
+<script type='text/javascript'>
+var widgetOptions = {
+'key': '8f00879506a81621b16bbc544d45b23b', // votre cle fonetic (short)
+'tab': {
+'enabled': true, // activer le bouton
+'animated': true, // animation du bouton
+'inverted': true, // inversion des couleurs
+'label': 'Fonetic Express Wordpress', // label du bouton
+'color': 'FF6633', // couleur du bouton
+'position': 'top-right', // position du bouto
+'font': 'OpenSans-Regular' // police du texte
+},
+'overlay': {
+'background_color': '333333', // couleur de l'overlay
+'background_opacity': '70', // opacite de l'overlay
+'border_color': '333333', // couleur de la bordure
+'border_size': '4' // couleur de la bordure
+}
+};
+(function() {
+var el = document.createElement('script');
+el.type = 'text/javascript';
+el.src = ('https:' == document.location.protocol ? 'https:// : 'http:// ) + 'widget.fonetic.fr/widget.js';
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(el, s);
+})();
+</script>
+<!--/Fonetic Widget-->
+",
 			));
 		}
 	}
@@ -188,8 +216,7 @@ class Fonetic_Admin {
 
 		if($this->wpdb->get_var("SHOW TABLES LIKE '".$this->table_name."'") == $this->table_name) {
 
-			$query = "DROP TABLE `".$this->table_name."`";
-			$this->wpdb->query($query);
+			$this->wpdb->query("DROP TABLE `".$this->table_name);
 		}
 	}
 }
