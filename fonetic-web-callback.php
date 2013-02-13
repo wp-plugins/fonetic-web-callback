@@ -183,9 +183,9 @@ var widgetOptions = {
 		'enabled': true, // activer le bouton
 		'animated': true, // animation du bouton
 		'inverted': true, // inversion des couleurs
-		'label': 'Fonetic Express Wordpress', // label du bouton
+		'label': 'Fonetic Express Wordpress',	// label du bouton
 		'color': 'FF6633', // couleur du bouton
-		'position': 'top-right', // position du bouton
+		'position': 'bottom-right', // position du bouton
 		'font': 'OpenSans-Regular' // police du texte
 	},
 	'overlay': {
