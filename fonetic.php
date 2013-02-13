@@ -128,7 +128,7 @@ class Fonetic_Admin {
 		}
 
 		// récupération des information en base de données
-		$sql = $this->wpdb->prepare("SELECT * FROM ".$this->table_name." LIMIT 1");
+		$sql = $this->wpdb->prepare("SELECT javascript FROM ".$this->table_name." LIMIT 1");
 		$data = $this->wpdb->get_results($sql);
 
 		echo '<h1>'.$this->title.' - '.__('Configuration', 'fonetic').'</h1>
@@ -153,7 +153,7 @@ class Fonetic_Admin {
 	//==============================================================================
 	function front_js(){
 
-		$sql = $this->wpdb->prepare("SELECT * FROM ".$this->table_name." LIMIT 1");
+		$sql = $this->wpdb->prepare("SELECT javascript FROM ".$this->table_name." LIMIT 1");
 		$data = $this->wpdb->get_results($sql);
 
 		echo $data[0]->javascript."\r\n";
