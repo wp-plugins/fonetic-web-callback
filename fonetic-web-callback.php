@@ -2,14 +2,14 @@
 
 /**
  * @package Fonetic Web Callback
- * @version 1.0.7
+ * @version 1.0.8
  */
 
 /*
    Plugin Name: Fonetic Web Callback
    Plugin URI: http://wordpress.org/extend/plugins/fonetic/
    Description: Fonetic is a web call feature for your website that allows your visitors to be called back for free. Get a real leverage for your online conversions !
-   Version: 1.0.7
+   Version: 1.0.8
    Author: <a href="http://www.fonetic.fr/">Fonetic</a>, <a href="http://www.netiva.fr/">Netiva</a>
    Author URI: http://fonetic.fr/
 */
@@ -69,7 +69,7 @@ class Fonetic_Web_Callback_Admin {
 		add_action('admin_notices', array(&$this, 'admin_notices'));
 
 		// Front
-		add_action( 'wp_enqueue_scripts', array(&$this, 'front_js'));
+		add_action( 'wp_footer', array(&$this, 'front_js'));
 	}
 
 	//==============================================================================
@@ -152,7 +152,7 @@ class Fonetic_Web_Callback_Admin {
 	// Register Javascript for Front Pages
 	//==============================================================================
 	function front_js(){
-
+		//wp_enqueue_script('tb-main', FONETIC_URL.'fonetic.js', array(), false, true);
 		$data = $this->wpdb->get_results("SELECT * FROM ".$this->table_name." LIMIT 1");
 
 		echo $data[0]->javascript."\r\n";

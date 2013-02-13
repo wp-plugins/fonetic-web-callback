@@ -4,7 +4,7 @@ Donate link: http://netiva.fr
 Tags: fonetic, callback, web callback, instant call, chat, contact, support, customer, conversion, widget, phone, call, click to call, analytics statistic, webmarketing, e-marketing, call center
 Requires at least: 3.5
 Tested up to: 3.5
-Stable tag: 1.0.7
+Stable tag: 1.0.8
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -63,6 +63,9 @@ Coming soon :)
 5. Fonetic Dashboard
 
 == Changelog ==
+
+= 1.0.8 =
+*	Change javascript position
 
 = 1.0.7 =
 *	Fix php error
