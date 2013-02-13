@@ -174,37 +174,7 @@ class Fonetic_Admin {
 			dbDelta($query);
 
 			$this->wpdb->insert($this->table_name, array(
-			'javascript' => "
-<!--Fonetic Widget-->
-<script type='text/javascript'>
-var widgetOptions = {
-'key': '8f00879506a81621b16bbc544d45b23b', // votre cle fonetic (short)
-'tab': {
-'enabled': true, // activer le bouton
-'animated': true, // animation du bouton
-'inverted': true, // inversion des couleurs
-'label': 'Fonetic Express Wordpress', // label du bouton
-'color': 'FF6633', // couleur du bouton
-'position': 'top-right', // position du bouto
-'font': 'OpenSans-Regular' // police du texte
-},
-'overlay': {
-'background_color': '333333', // couleur de l'overlay
-'background_opacity': '70', // opacite de l'overlay
-'border_color': '333333', // couleur de la bordure
-'border_size': '4' // couleur de la bordure
-}
-};
-(function() {
-var el = document.createElement('script');
-el.type = 'text/javascript';
-el.src = ('https:' == document.location.protocol ? 'https:// : 'http:// ) + 'widget.fonetic.fr/widget.js';
-var s = document.getElementsByTagName('script')[0];
-s.parentNode.insertBefore(el, s);
-})();
-</script>
-<!--/Fonetic Widget-->
-",
+				'javascript' => ""
 			));
 		}
 	}

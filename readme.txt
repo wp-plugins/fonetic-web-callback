@@ -64,6 +64,9 @@ Coming soon :)
 
 == Changelog ==
 
+= 1.0.6 =
+*	Set default value for database
+
 = 1.0.5 =
 *	Update screenshot and comments
 *	Fix screenshot path and file name
