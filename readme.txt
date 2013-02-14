@@ -22,18 +22,22 @@ For the attention of our english users
 FONETIC commercial & service website is currently being translated in english. Please apologize for the inconvenience. However FONETIC’s widget (non-customizable fields) is already translated and available in the following languages : FR, EN, ES, DE, IT, CN, PT, FI, SE.
 Please note that connections are possible with 233 countries.
 
+================================================================================
+
 = Vous êtes e-commerçant ? Démultipliez l’efficacité marketing de votre boutique en ligne avec le Web Call-back =
 
-*Rassurez vos clients et humanisez votre site internet*
+= Rassurez vos clients et humanisez votre site internet =
 Pour augmenter l’efficacité marketing de votre site internet, vous devez lever les inquiétudes de vos clients. Pour cela, vous devez être claire sur les condition de frais de port, proposer des systèmes de paiement qui inspirent confiance, et valoriser les témoignages de vos clients montrant qu’il n’y a pas de problème de livraison.
 
-*Comment tirer profit du web Call Back ?*
+= Comment tirer profit du web Call Back ? =
 Le web call back joue un rôle essentiel pour rassurer vos visiteurs. En leur donnant la possibilité d’être appelé, vos clients sauront qu’ils peuvent entrer en contact avec quelqu’un qui peut les conseillers et les aiguiller en cas de difficultés pour finaliser la vente. Pour obtenir le meilleur résultat, nous vous conseillons d’intégrer une image de télé-opératrice sur toutes vos pages. De cette manière, vos clients sauront qu’ils peuvent être rappelé et grâce à la photographie, vous allez humaniser votre site, ce qui réduira l’impression de dialogue avec la machine.
 
-*Limitez les abandons de paniers : accompagnez vos clients tout au long de la vente*
+= Limitez les abandons de paniers : accompagnez vos clients tout au long de la vente =
 Un des fléaux du e-commerce concerne les ventes non finalisées. Après avoir passé de longues minutes sur votre site et ajouté plusieurs produits, votre visiteur abandonne la transaction au milieu du processus de paiement. Bien souvent, cette situation est provoquée par des difficultés technique qu’il rencontre, en particulier dans création de son compte client.
 
 Le web-call back permet de limiter ce phénomène car dans ce cas, le client vous appellera et vous pourrez l’aiguiller jusqu’à la finalisation de la vente.
+
+================================================================================
 
 = Plugin language =
 *	English
