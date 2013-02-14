@@ -25,7 +25,8 @@ Please note that connections are possible with 233 countries.
 
 --------------------------------------------------------------------------------
 
-= Vous êtes e-commerçant ? Démultipliez l’efficacité marketing de votre boutique en ligne avec le Web Call-back =
+= Vous êtes e-commerçant ? =
+= Démultipliez l’efficacité marketing de votre boutique en ligne avec le Web Call-back ! =
 
 
 = Rassurez vos clients et humanisez votre site internet =
@@ -38,6 +39,9 @@ Le web call back joue un rôle essentiel pour rassurer vos visiteurs. En leur do
 Un des fléaux du e-commerce concerne les ventes non finalisées. Après avoir passé de longues minutes sur votre site et ajouté plusieurs produits, votre visiteur abandonne la transaction au milieu du processus de paiement. Bien souvent, cette situation est provoquée par des difficultés technique qu’il rencontre, en particulier dans création de son compte client.
 
 Le web-call back permet de limiter ce phénomène car dans ce cas, le client vous appellera et vous pourrez l’aiguiller jusqu’à la finalisation de la vente.
+
+= Augmentez votre panier moyen ! =
+Une fois que votre visiteur est au bout du fil, votre capacité marketing est réellement démultipliée : grâce à vos conseils, vous pouvez réaliser des ventes additionnelles et faire en sorte que vos clients montent en gamme.
 
 --------------------------------------------------------------------------------
 
