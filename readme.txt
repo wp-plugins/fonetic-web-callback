@@ -12,8 +12,8 @@ Fonetic is a web call feature for your website that allows your visitors to be c
 
 == Description ==
 
-= Live demo =
-*	[Wordpress 3.5](http://wordpress35.netiva.fr/)
+= Fonetic live demo =
+*	[Wordpress 3.5 - Front Widget](http://wordpress35.netiva.fr/)
 
 Web Callback is an instant phone call service for your website, email signature or newsletter.
 It allows your visitors to be called back for free. Get a real leverage for your online conversions !
@@ -39,6 +39,11 @@ Le web-call back permet de limiter ce phénomène car dans ce cas, le client vou
 
 ================================================================================
 
+= Links =
+*	[Project Homepage](http://fonetic.fr/)
+*	[Support](http://fonetic.fr/)
+*	[Team](http://netiva.fr/)
+
 = Plugin language =
 *	English
 *	French
@@ -53,11 +58,6 @@ Le web-call back permet de limiter ce phénomène car dans ce cas, le client vou
 *	Portuguese
 *	Finnish
 *	Swedish
-
-= Links =
-*	[Project Homepage](http://fonetic.fr/)
-*	[Support](http://fonetic.fr/)
-*	[Team](http://netiva.fr/)
 
 == Installation ==
 
