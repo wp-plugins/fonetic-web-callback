@@ -28,7 +28,7 @@ Please note that connections are possible with 233 countries.
 Démultipliez l’efficacité marketing de votre boutique en ligne avec le Web Call-back !
 
 = Rassurez vos clients et humanisez votre site internet =
-Pour augmenter l’efficacité marketing de votre site internet, vous devez lever les inquiétudes de vos clients. Pour cela, vous devez être claire sur les condition de frais de port, proposer des systèmes de paiement qui inspirent confiance, et valoriser les témoignages de vos clients montrant qu’il n’y a pas de problème de livraison.
+Pour augmenter l’efficacité marketing de votre site internet, vous devez lever les inquiétudes de vos clients. Pour cela, vous devez être claire sur les conditions de frais de port, proposer des systèmes de paiement qui inspirent confiance, et valoriser les témoignages de vos clients montrant qu’il n’y a pas de problème de livraison.
 
 = Comment tirer profit du web Call Back ? =
 Le web call back joue un rôle essentiel pour rassurer vos visiteurs. En leur donnant la possibilité d’être appelé, vos clients sauront qu’ils peuvent entrer en contact avec quelqu’un qui peut les conseillers et les aiguiller en cas de difficultés pour finaliser la vente. Pour obtenir le meilleur résultat, nous vous conseillons d’intégrer une image de télé-opératrice sur toutes vos pages. De cette manière, vos clients sauront qu’ils peuvent être rappelé et grâce à la photographie, vous allez humaniser votre site, ce qui réduira l’impression de dialogue avec la machine.
