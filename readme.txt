@@ -22,9 +22,9 @@ For the attention of our english users
 FONETIC commercial & service website is currently being translated in english. Please apologize for the inconvenience. However FONETIC’s widget (non-customizable fields) is already translated and available in the following languages : FR, EN, ES, DE, IT, CN, PT, FI, SE.
 Please note that connections are possible with 233 countries.
 
-________________________________________________________________________________
-
+--------------------------------------------------------------------------------
 = Vous êtes e-commerçant ? Démultipliez l’efficacité marketing de votre boutique en ligne avec le Web Call-back =
+
 
 = Rassurez vos clients et humanisez votre site internet =
 Pour augmenter l’efficacité marketing de votre site internet, vous devez lever les inquiétudes de vos clients. Pour cela, vous devez être claire sur les condition de frais de port, proposer des systèmes de paiement qui inspirent confiance, et valoriser les témoignages de vos clients montrant qu’il n’y a pas de problème de livraison.
@@ -37,7 +37,7 @@ Un des fléaux du e-commerce concerne les ventes non finalisées. Après avoir p
 
 Le web-call back permet de limiter ce phénomène car dans ce cas, le client vous appellera et vous pourrez l’aiguiller jusqu’à la finalisation de la vente.
 
-________________________________________________________________________________
+--------------------------------------------------------------------------------
 
 = Links =
 *	[Project Homepage](http://fonetic.fr/)
