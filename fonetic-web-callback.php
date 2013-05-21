@@ -2,14 +2,14 @@
 
 /**
  * @package Fonetic Web Callback
- * @version 1.0.8
+ * @version 2.0.0
  */
 
 /*
    Plugin Name: Fonetic Web Callback
    Plugin URI: http://wordpress.org/extend/plugins/fonetic/
    Description: Fonetic is a web call feature for your website that allows your visitors to be called back for free. Get a real leverage for your online conversions !
-   Version: 1.0.8
+   Version: 2.0.0
    Author: <a href="http://www.fonetic.fr/">Fonetic</a>, <a href="http://www.netiva.fr/">Netiva</a>
    Author URI: http://fonetic.fr/
 */
@@ -97,13 +97,135 @@ class Fonetic_Web_Callback_Admin {
 	//==============================================================================
 	public function admin_menu() {
 
-		add_menu_page($this->title.' - Configuration', 'Fonetic', 'administrator', 'fonetic-plugin', array(&$this, 'admin_menu_overview'));
-		add_submenu_page('fonetic-plugin', $this->title.' - '.__('Configuration', 'fonetic'), __('Configuration', 'fonetic'), 'administrator', 'fonetic-configuration', array(&$this, 'admin_menu_configuration'));
+		add_menu_page($this->title.' - Configuration', 'Fonetic Express', 'administrator', 'fonetic-plugin', array(&$this, 'admin_configuration'), ''.FONETIC_URL.'images/fonetic-menu-icon.png');
 	}
 
-	public function admin_menu_overview() {
+	public function admin_configuration() {
 
-		echo '<h1>'.$this->title.' - '.__('Widget de mise en relation', 'fonetic').'</h1>
+		// enregistrement des informations en base de données
+		if (isset($_POST['save_options'])) {
+			$this->wpdb->query("
+				UPDATE ".$this->table_name."
+				SET enabled = '".$_POST['fonetic_enabled']."',
+					short_key = '".$_POST['fonetic_short_key']."',
+					label = '".$_POST['fonetic_label']."',
+					color = '".$_POST['fonetic_color']."',
+					inverted = '".$_POST['fonetic_inverted']."',
+					animated = '".$_POST['fonetic_animated']."',
+					position = '".$_POST['fonetic_position']."',
+					font = '".$_POST['fonetic_font']."',
+					background_color = '".$_POST['fonetic_background_color']."',
+					background_opacity = '".$_POST['fonetic_background_opacity']."',
+					border_color = '".$_POST['fonetic_border_color']."',
+					border_size = '".$_POST['fonetic_border_size']."'
+				LIMIT 1
+			");
+		}
+
+		// récupération des information en base de données
+		$data = $this->wpdb->get_results("SELECT * FROM ".$this->table_name." LIMIT 1");
+
+		echo '<script type="text/javascript" src="'.FONETIC_URL.'jscolor/jscolor.js"></script>';
+
+		echo '<img style="float:right;" src="'.FONETIC_URL.'images/webcallback.png" />
+		<div id="fonetic_admin" class="wrap">
+    		<div class="icon32" id="icon-options-general"></div>
+    		<h2>'.$this->title.' - '.__('Réglages de votre widget', 'fonetic').'</h2>
+    		'.__('Fonetic en quelques mots', 'fonetic').'
+			'.__('Rassurez vos internautes et diminuez les abandons de paniers !', 'fonetic');
+			if (isset($_POST['save_options'])) {
+				echo '<div class="updated"><p><strong>'.__("Widget enregistré !", "fonetic").'</strong></p></div>';
+			}
+			echo '<br />
+			<form method="POST" action="'.$_SERVER['REQUEST_URI'].'">
+				<legend>'.__('Paramètres', 'fonetic').'</legend>
+				<h3>'.__('Votre compte Fonetic', 'fonetic').'</h3>
+				<p><label for="fonetic_enabled">'.__('Activer le widget', 'fonetic').'</label>
+					<select id="fonetic_enabled" name="fonetic_enabled">
+						<option value="1" '.(($data[0]->enabled == true) ? 'selected ="selected"' : '').'>'.__('Oui', 'fonetic').'</option>
+						<option value="0" '.(($data[0]->enabled == false) ? 'selected ="selected"' : '').'>'.__('Non', 'fonetic').'</option>
+					</select>
+				</p>
+				<p>
+					<label for="fonetic_short_key">'.__('Votre clé Fonetic Express', 'fonetic').'</label>
+					<input id="fonetic_short_key" name="fonetic_short_key" type="text" value="'.$data[0]->short_key.'" size="50" />
+				</p>
+				<h3>'.__('Paramètres du bouton déclencheur', 'fonetic').'</h3>
+				<p>
+					<label for="fonetic_label">'.__('Label', 'fonetic').'</label>
+					<input id="fonetic_label" name="fonetic_label" type="text" value="'.$data[0]->label.'"  size="50" />
+				</p>
+				<p>
+					<label for="fonetic_color">'.__('Couleur', 'fonetic').'</label>
+					<input class="color" id="fonetic_color" name="fonetic_color" type="text" value="'.$data[0]->color.'" size="6" />
+					<span>'.__('code couleur hexadecimal', 'fonetic').'</span>
+				</p>
+				<p><label for="fonetic_inverted">'.__('Inversion les couleurs', 'fonetic').'</label>
+					<select id="fonetic_inverted" name="fonetic_inverted">
+						<option value="1" '.(($data[0]->inverted == true) ? 'selected ="selected"' : '').'>'.__('Oui', 'fonetic').'</option>
+						<option value="0" '.(($data[0]->inverted == false) ? 'selected ="selected"' : '').'>'.__('Non', 'fonetic').'</option>
+					</select>
+				</p>
+				<p><label for="fonetic_animated">'.__('Animation', 'fonetic').'</label>
+					<select id="fonetic_animated" name="fonetic_animated">
+						<option value="1" '.(($data[0]->animated == true) ? 'selected ="selected"' : '').'>'.__('Oui', 'fonetic').'</option>
+						<option value="0" '.(($data[0]->animated == false) ? 'selected ="selected"' : '').'>'.__('Non', 'fonetic').'</option>
+					</select>
+				</p>
+				<p><label for="fonetic_position">'.__('Position', 'fonetic').'</label>
+					<select id="fonetic_position" name="fonetic_position">';
+						$position_arr = array('middle-right', 'top-right', 'top-left', 'middle-right', 'middle-left', 'bottom-right', 'bottom-left');
+						foreach ($position_arr AS $k => $v) {
+							$selected = ($data[0]->position == $v) ? 'selected="selected"' : '';
+							echo '<option value="'.$v.'" '.$selected.'>'.$v.'</option>';
+						}
+					echo '</select>
+				</p>
+				<p><label for="fonetic_font">'.__('Police du texte', 'fonetic').'</label>
+					<select id="fonetic_font" name="fonetic_font">
+						<option value="OpenSans-Semibold">OpenSans-Semibold</option>
+						<option value="Arial">Arial</option>
+						<option value="OpenSans-Regular">OpenSans-Regular</option>
+						<option value="OpenSans-Italic">OpenSans-Italic</option>
+						<option value="OpenSans-LightItalic">OpenSans-LightItalic</option>
+						<option value="OpenSans-Semibold">OpenSans-Semibold</option>
+						<option value="OpenSans-SemiboldItalic">OpenSans-SemiboldItalic</option>
+						<option value="OpenSans-Bold">OpenSans-Bold</option>
+						<option value="OpenSans-BoldItalic">OpenSans-BoldItalic</option>
+						<option value="OpenSans-Extrabold">OpenSans-Extrabold</option>
+						<option value="OpenSans-ExtraboldItalic">OpenSans-ExtraboldItalic</option>
+					</select>
+				</p>
+				<h3>'.__('Paramètres de la fenêtre', 'fonetic').'</h3>
+				<p>
+					<label for="fonetic_background_color">'.__('Couleur de fond', 'fonetic').'</label>
+					<input class="color" id="fonetic_background_color" name="fonetic_background_color" type="text" value="'.$data[0]->background_color.'" size="6" />
+					<span>'.__('code couleur hexadecimal', 'fonetic').'</span>
+				</p>
+				<p>
+					<label for="fonetic_background_opacity">'.__('Transparence du fond', 'fonetic').'</label>
+					<input id="fonetic_background_opacity" name="fonetic_background_opacity" type="text" value="'.$data[0]->background_opacity.'" size="6" />
+					<span>'.__('valeur entre 0 et 100', 'fonetic').'</span>
+				</p>
+				<p>
+					<label for="fonetic_border_color">'.__('Couleur de la bordure', 'fonetic').'</label>
+					<input class="color" id="fonetic_border_color" name="fonetic_border_color" type="text" value="'.$data[0]->border_color.'" size="6" />
+					<span>'.__('code couleur hexadecimal', 'fonetic').'</span>
+				</p>
+				<p>
+					<label for="fonetic_border_size">'.__('Epaisseur de la bordure', 'fonetic').'</label>
+					<input id="fonetic_border_size" name="fonetic_border_size" type="text" value="'.$data[0]->border_size.'" size="6" />
+					<span'.__('valeur entre 0 et 25', 'fonetic').'></span>
+				</p>
+				<p><input class="button-primary" class="left" type="submit" name="save_options" value="'.__('Enregistrer les modifications', 'fonetic').'" /></p>
+			</form>
+		</div id="fonetic_admin">';
+
+		echo __('Comment faire fonctionner Fonetic ?', 'fonetic');
+
+		/*
+		echo '
+		<h1>'.$this->title.' - '.__('Widget de mise en relation', 'fonetic').'</h1>
 		<hr />
 		<img style="float:right;" src="'.FONETIC_URL.'images/webcallback.png" />
 		'.__('Description', 'fonetic').'
@@ -114,38 +236,7 @@ class Fonetic_Web_Callback_Admin {
 			<a href="'.FONETIC_URL.'screenshot-4.jpg" target="_BLANK"><img src="'.FONETIC_URL.'screenshot-4.jpg" style="width:200px;" /></a>
 			<a href="'.FONETIC_URL.'screenshot-5.jpg" target="_BLANK"><img src="'.FONETIC_URL.'screenshot-5.jpg" style="width:200px;" /></a>
 		</p>';
-	}
-
-	public function admin_menu_configuration() {
-
-		// enregistrement des informations en base de données
-		if (isset($_POST['save_options'])) {
-
-			$this->wpdb->query("
-				UPDATE ".$this->table_name."
-				SET javascript = '".$_POST['javascript']."'
-				LIMIT 1
-			");
-		}
-
-		// récupération des information en base de données
-		$data = $this->wpdb->get_results("SELECT * FROM ".$this->table_name." LIMIT 1");
-
-		echo '<h1>'.$this->title.' - '.__('Configuration', 'fonetic').'</h1>
-		<hr />
-		'.__('Legende', 'fonetic').'
-		<form method="POST" action="'.$_SERVER['REQUEST_URI'].'">
-		<textarea name="javascript" class="large-text code" rows="30">'.$data[0]->javascript.'</textarea>
-		<input class="button-primary" class="left" type="submit" name="save_options" value="'.__('Enregistrer le widget', 'fonetic').'" />
-		<a href="https://groups.google.com/a/fonetic.fr/forum/embed/?place=forum/noreply">'.__('Documentation', 'fonetic').'</a>
-		<div class="clear"></div>
-		</form>';
-
-		// affichage de la confirmation du POST
-		if (isset($_POST['save_options'])) {
-
-			echo '<div class="updated"><p><strong>'.__("Widget enregistré !", "fonetic").'</strong></p></div>';
-		}
+		*/
 	}
 
 	//==============================================================================
@@ -155,44 +246,24 @@ class Fonetic_Web_Callback_Admin {
 		//wp_enqueue_script('tb-main', FONETIC_URL.'fonetic.js', array(), false, true);
 		$data = $this->wpdb->get_results("SELECT * FROM ".$this->table_name." LIMIT 1");
 
-		echo $data[0]->javascript."\r\n";
-	}
-
-	//==============================================================================
-	// Register Install
-	//==============================================================================
-	public function install() {
-
-		if($this->wpdb->get_var("SHOW TABLES LIKE '".$this->table_name."'") != $this->table_name) {
-
-			$query  = "
-			CREATE TABLE IF NOT EXISTS `".$this->table_name."` (
-				`javascript` text NOT NULL
-			);
-			";
-
-			require_once(ABSPATH.'wp-admin/includes/upgrade.php');
-			dbDelta($query);
-
-			$this->wpdb->insert($this->table_name, array('javascript' => "
-<!--Fonetic Widget-->
+$html = "<!--Fonetic Widget-->
 <script type='text/javascript'>
 var widgetOptions = {
-	'key': '8f00879506a81621b16bbc544d45b23b', // votre cle fonetic (short)
+	'key': '".$data[0]->short_key."', // votre cle fonetic (short)
 	'tab': {
-		'enabled': true, // activer le bouton
-		'animated': true, // animation du bouton
-		'inverted': true, // inversion des couleurs
-		'label': 'Fonetic Express Wordpress',	// label du bouton
-		'color': 'FF6633', // couleur du bouton
-		'position': 'bottom-right', // position du bouton
-		'font': 'OpenSans-Regular' // police du texte
+		'enabled': ".(($data[0]->enabled) ? 'true' : 'false').", // activer le bouton
+		'animated': ".(($data[0]->animated) ? 'true' : 'false').", // animation du bouton
+		'inverted': ".(($data[0]->inverted) ? 'true' : 'false').", // inversion des couleurs
+		'label': '".addslashes($data[0]->label)."', // label du bouton
+		'color': '".$data[0]->color."', // couleur du bouton
+		'position': '".$data[0]->position."', // position du bouton
+		'font': '".$data[0]->font."' // police du texte
 	},
 	'overlay': {
-		'background_color': '333333', // couleur de l'overlay
-		'background_opacity': '70', // opacite de l'overlay
-		'border_color': '333333', // couleur de la bordure
-		'border_size': '4' // couleur de la bordure
+		'background_color': '".$data[0]->background_color."', // couleur de l'overlay
+		'background_opacity': '".$data[0]->background_opacity."', // opacite de l'overlay
+		'border_color': '".$data[0]->border_color."', // couleur de la bordure
+		'border_size': '".$data[0]->border_size."' // couleur de la bordure
 	}
 };
 (function() {
@@ -204,7 +275,51 @@ var widgetOptions = {
 })();
 </script>
 <!--/Fonetic Widget-->
-"
+";
+
+		echo $html."\r\n";
+	}
+
+	//==============================================================================
+	// Register Install
+	//==============================================================================
+	public function install() {
+
+		if($this->wpdb->get_var("SHOW TABLES LIKE '".$this->table_name."'") != $this->table_name) {
+
+			$query  = "
+				CREATE TABLE IF NOT EXISTS `".$this->table_name."` (
+				  `enabled` tinyint(1) NOT NULL,
+				  `short_key` varchar(35) NOT NULL,
+				  `label` varchar(150) NOT NULL,
+				  `color` varchar(6) NOT NULL,
+				  `inverted` tinyint(1) NOT NULL,
+				  `animated` tinyint(1) NOT NULL,
+				  `position` varchar(15) NOT NULL,
+				  `font` varchar(15) NOT NULL,
+				  `background_color` varchar(6) NOT NULL,
+				  `background_opacity` float NOT NULL,
+				  `border_color` varchar(6) NOT NULL,
+				  `border_size` tinyint(3) unsigned NOT NULL
+				);
+			";
+
+			require_once(ABSPATH.'wp-admin/includes/upgrade.php');
+			dbDelta($query);
+
+			$this->wpdb->insert($this->table_name, array(
+				'enabled' => "0",
+				'short_key' => "",
+				'label' => "Besoin d'information ?",
+				'color' => "FF0000",
+				'inverted' => "1",
+				'animated' => "1",
+				'position' => "middle-right",
+				'font' => "OpenSans-Semiblod",
+				'background_color' => "000000",
+				'background_opacity' => "50",
+				'border_color' => "000000",
+				'border_size' => "5"
 			));
 		}
 

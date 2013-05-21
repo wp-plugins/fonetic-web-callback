@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: fonetic wordpress\n"
-"POT-Creation-Date: 2013-02-10 13:18+0100\n"
-"PO-Revision-Date: 2013-02-10 13:18+0100\n"
+"POT-Creation-Date: 2013-05-16 11:36+0100\n"
+"PO-Revision-Date: 2013-05-16 11:37+0100\n"
 "Last-Translator: Netiva <contact@netiva.fr>\n"
 "Language-Team: Netiva <contact@netiva.fr>\n"
 "MIME-Version: 1.0\n"
@@ -12,55 +12,204 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-SearchPath-0: C:\\www\\web\\wordpress\\test-version\\3.5\\wp-content"
-"\\plugins\\fonetic\n"
+"X-Poedit-SearchPath-0: C:\\www\\web\\wordpress\\test-version\\3.5.1\\wp-"
+"content\\plugins\\fonetic-web-callback\n"
 
-#: C:\www\web\wordpress\test-version\3.5\wp-content\plugins\fonetic/fonetic.php:100
-#: C:\www\web\wordpress\test-version\3.5\wp-content\plugins\fonetic/fonetic.php:134
-msgid "Configuration"
-msgstr "Configuration"
+#: C:\www\web\wordpress\test-version\3.5.1\wp-content\plugins\fonetic-web-callback/fonetic-web-callback.php:133
+msgid "Réglages de votre widget"
+msgstr "Réglages de votre widget"
 
-#: C:\www\web\wordpress\test-version\3.5\wp-content\plugins\fonetic/fonetic.php:105
-msgid "Widget de mise en relation"
-msgstr "Widget de mise en relation"
-
-#: C:\www\web\wordpress\test-version\3.5\wp-content\plugins\fonetic/fonetic.php:108
-msgid "Description"
+#: C:\www\web\wordpress\test-version\3.5.1\wp-content\plugins\fonetic-web-callback/fonetic-web-callback.php:134
+msgid "Fonetic en quelques mots"
 msgstr ""
-"<h3>Fonetic en quelques mots</h3><p><strong>Le Web Callback est un service "
-"de rappel téléphonique instantané pour\tvotre site internet et ou signature "
-"mail.<br />Il offre une mise en relation\tgratuite et spontanée pour vos "
-"internautes.</strong></p><h3>Que peut apporter un Web Callback sur son site ?"
-"</h3><p>En phase d’achat, l’internaute recherche essentiellement un contact "
-"téléphonique.<br />\tDe plus, dans un contexte concurrentiel intense, un "
-"service client disponible\tpar téléphone est donc d’une importance "
-"stratégique pour une société en ligne.</p><p><u>Avantages pour le site "
-"internet :</u></p><ul>\t<li>- Le Web Callback augmente le taux de conversion "
-"et les ventes</li>\t<li>- Le Web Callback améliore votre service client et "
-"votre image</li>\t<li>- Le Web Callback qualifie vos prospects (email, "
-"téléphone)</li></ul><p><u>Avantages pour l'internaute :</u></p><ul>\t<li>- "
-"Le Web Callback est un gage de gratuité</li>\t<li>- Le Web Callback apporte "
-"l’assurance d’un service rapide (pas de serveur vocal)</li></ul>"
+"<h3>Fonetic en quelques mots</h3><p>Fonetic est un service de rappel "
+"téléphonique instantané (web callback ou click to call) pour votre site "
+"internet et ou signature mail. Il offre une mise en relation gratuite et "
+"spontanée pour vos internautes.</p>"
 
-#: C:\www\web\wordpress\test-version\3.5\wp-content\plugins\fonetic/fonetic.php:136
-msgid "Legende"
+#: C:\www\web\wordpress\test-version\3.5.1\wp-content\plugins\fonetic-web-callback/fonetic-web-callback.php:135
+msgid "Rassurez vos internautes et diminuez les abandons de paniers !"
 msgstr ""
-"<h2>Enregistrement de votre widget</h2><p>1 - Inscrivez vous sur <a href="
-"\"http://fonetic.fr\">Fonetic.fr</a>, puis créez votre widget.</p><p>2 - "
-"Collez la portion de code de votre widget dans le champs ci-dessous:</p>"
+"<h3>Rassurez vos internautes et diminuez les abandons de paniers !</"
+"h3><p>Fonetic assure la mise en relation téléphonique instantanée avec vos "
+"internautes.</p>"
 
-#: C:\www\web\wordpress\test-version\3.5\wp-content\plugins\fonetic/fonetic.php:139
-msgid "Enregistrer le widget"
-msgstr "Enregistrer le widget"
-
-#: C:\www\web\wordpress\test-version\3.5\wp-content\plugins\fonetic/fonetic.php:140
-msgid "Documentation"
-msgstr "Documentation"
-
-#: C:\www\web\wordpress\test-version\3.5\wp-content\plugins\fonetic/fonetic.php:147
-#, fuzzy
+#: C:\www\web\wordpress\test-version\3.5.1\wp-content\plugins\fonetic-web-callback/fonetic-web-callback.php:137
 msgid "Widget enregistré !"
 msgstr "Widget enregistré !"
+
+#: C:\www\web\wordpress\test-version\3.5.1\wp-content\plugins\fonetic-web-callback/fonetic-web-callback.php:141
+msgid "Paramètres"
+msgstr "Paramètres"
+
+#: C:\www\web\wordpress\test-version\3.5.1\wp-content\plugins\fonetic-web-callback/fonetic-web-callback.php:142
+msgid "Votre compte Fonetic"
+msgstr "Votre compte Fonetic"
+
+#: C:\www\web\wordpress\test-version\3.5.1\wp-content\plugins\fonetic-web-callback/fonetic-web-callback.php:143
+msgid "Activer le widget"
+msgstr "Activer le widget"
+
+#: C:\www\web\wordpress\test-version\3.5.1\wp-content\plugins\fonetic-web-callback/fonetic-web-callback.php:145
+#: C:\www\web\wordpress\test-version\3.5.1\wp-content\plugins\fonetic-web-callback/fonetic-web-callback.php:165
+#: C:\www\web\wordpress\test-version\3.5.1\wp-content\plugins\fonetic-web-callback/fonetic-web-callback.php:171
+msgid "Oui"
+msgstr "Oui"
+
+#: C:\www\web\wordpress\test-version\3.5.1\wp-content\plugins\fonetic-web-callback/fonetic-web-callback.php:146
+#: C:\www\web\wordpress\test-version\3.5.1\wp-content\plugins\fonetic-web-callback/fonetic-web-callback.php:166
+#: C:\www\web\wordpress\test-version\3.5.1\wp-content\plugins\fonetic-web-callback/fonetic-web-callback.php:172
+msgid "Non"
+msgstr "Non"
+
+#: C:\www\web\wordpress\test-version\3.5.1\wp-content\plugins\fonetic-web-callback/fonetic-web-callback.php:150
+msgid "Votre clé Fonetic Express"
+msgstr "Votre clé fonetic Express"
+
+#: C:\www\web\wordpress\test-version\3.5.1\wp-content\plugins\fonetic-web-callback/fonetic-web-callback.php:153
+msgid "Paramètres du bouton déclencheur"
+msgstr "Paramètres du bouton déclencheur"
+
+#: C:\www\web\wordpress\test-version\3.5.1\wp-content\plugins\fonetic-web-callback/fonetic-web-callback.php:155
+msgid "Label"
+msgstr "Label"
+
+#: C:\www\web\wordpress\test-version\3.5.1\wp-content\plugins\fonetic-web-callback/fonetic-web-callback.php:159
+msgid "Couleur"
+msgstr "Couleur"
+
+#: C:\www\web\wordpress\test-version\3.5.1\wp-content\plugins\fonetic-web-callback/fonetic-web-callback.php:161
+#: C:\www\web\wordpress\test-version\3.5.1\wp-content\plugins\fonetic-web-callback/fonetic-web-callback.php:203
+#: C:\www\web\wordpress\test-version\3.5.1\wp-content\plugins\fonetic-web-callback/fonetic-web-callback.php:213
+msgid "code couleur hexadecimal"
+msgstr "code couleur hexadecimal"
+
+#: C:\www\web\wordpress\test-version\3.5.1\wp-content\plugins\fonetic-web-callback/fonetic-web-callback.php:163
+msgid "Inversion les couleurs"
+msgstr "Inversion les couleurs"
+
+#: C:\www\web\wordpress\test-version\3.5.1\wp-content\plugins\fonetic-web-callback/fonetic-web-callback.php:169
+msgid "Animation"
+msgstr "Animation"
+
+#: C:\www\web\wordpress\test-version\3.5.1\wp-content\plugins\fonetic-web-callback/fonetic-web-callback.php:175
+msgid "Position"
+msgstr "Position"
+
+#: C:\www\web\wordpress\test-version\3.5.1\wp-content\plugins\fonetic-web-callback/fonetic-web-callback.php:184
+msgid "Police du texte"
+msgstr "Police du texte"
+
+#: C:\www\web\wordpress\test-version\3.5.1\wp-content\plugins\fonetic-web-callback/fonetic-web-callback.php:199
+msgid "Paramètres de la fenêtre"
+msgstr "Paramètres de la fenêtre"
+
+#: C:\www\web\wordpress\test-version\3.5.1\wp-content\plugins\fonetic-web-callback/fonetic-web-callback.php:201
+msgid "Couleur de fond"
+msgstr "Couleur de fond"
+
+#: C:\www\web\wordpress\test-version\3.5.1\wp-content\plugins\fonetic-web-callback/fonetic-web-callback.php:206
+msgid "Transparence du fond"
+msgstr "Transparence du fond"
+
+#: C:\www\web\wordpress\test-version\3.5.1\wp-content\plugins\fonetic-web-callback/fonetic-web-callback.php:208
+msgid "valeur entre 0 et 100"
+msgstr "valeur entre 0 et 100"
+
+#: C:\www\web\wordpress\test-version\3.5.1\wp-content\plugins\fonetic-web-callback/fonetic-web-callback.php:211
+msgid "Couleur de la bordure"
+msgstr "Couleur de la bordure"
+
+#: C:\www\web\wordpress\test-version\3.5.1\wp-content\plugins\fonetic-web-callback/fonetic-web-callback.php:216
+msgid "Epaisseur de la bordure"
+msgstr "Epaisseur de la bordure"
+
+#: C:\www\web\wordpress\test-version\3.5.1\wp-content\plugins\fonetic-web-callback/fonetic-web-callback.php:218
+msgid "valeur entre 0 et 25"
+msgstr "valeur entre 0 et 25"
+
+#: C:\www\web\wordpress\test-version\3.5.1\wp-content\plugins\fonetic-web-callback/fonetic-web-callback.php:220
+msgid "Enregistrer les modifications"
+msgstr "Enregistrer les modifications"
+
+#: C:\www\web\wordpress\test-version\3.5.1\wp-content\plugins\fonetic-web-callback/fonetic-web-callback.php:224
+msgid "Comment faire fonctionner Fonetic ?"
+msgstr ""
+"<h3>Fonetic en quelques mots</h3><p>Fonetic est un service de rappel "
+"téléphonique instantané (web callback ou click to call) pour votre site "
+"internet et ou signature mail. Il offre une mise en relation gratuite et "
+"spontanée pour vos internautes.</p><h3>Comment faire fonctionner Fonetic ?</"
+"h3><ol><li><a class=\"button-primary\" target=\"_BLANK\" href=\"http://"
+"fonetic.fr/index.php?module=Account&action=Login\">Créer gratuitement votre "
+"compte Fonetic - 100 crédits de test offerts</a><br />Vous pouvez "
+"directement utilisez votre compte :<a target=\"_BLANK\" href=\"http://"
+"fonetic.fr/index.php?module=Account&action=Social&provider=facebook\"><img "
+"src=\"http://prestashop1531.netiva.fr/modules/fonetic/img/facebook.png\" /></"
+"a><a target=\"_BLANK\" href=\"http://fonetic.fr/index.php?"
+"module=Account&action=Social&provider=google\"><img src=\"http://"
+"prestashop1531.netiva.fr/modules/fonetic/img/google.png\" /></a></"
+"li><li>Suivez la procédure d'inscription, une première clé Fonetic sera créé "
+"à partir du numéro de téléphone que vous indiquerez dans votre profil "
+"utilisateur.</li><li>Dans le tableau <strong>Mes numéros de téléphone</"
+"strong>, configurez votre fuseau horaire & les horaires d'ouverture de votre "
+"numéro (Bouton orange).</li><li>Dans le tableau <strong>Mes numéros de "
+"téléphone</strong>, Créer & personnaliser le Widget (bouton vert) de votre "
+"numéro de téléphone.</li><li>Après avoir enregistré et prévisualisé votre "
+"widget, la clé Fonetic Express sera générée et affichée en dessous du "
+"formulaire. Copiez cette clé et enregistrez la dans le champs \"Clé Fonetic "
+"Express\" du formulaire ci-dessus.</li><li>Personnalisez votre étiquette via "
+"les autres options et </strong>enregistrezles modifications</strong>. </"
+"li><li>Votre module Fonetic est maintenant opérationnel ! Nous vous "
+"souhaitons de nombreuses conversions ! :-)</li></ol>"
+
+#~ msgid ""
+#~ "Fonetic assure la mise en relation téléphonique instantanée avec vos "
+#~ "internautes."
+#~ msgstr ""
+#~ "Fonetic assure la mise en relation téléphonique instantanée avec vos "
+#~ "internautes."
+
+#~ msgid "Description"
+#~ msgstr ""
+#~ "<h3>Fonetic en quelques mots</h3><p>Fonetic est un service de rappel "
+#~ "téléphonique instantané (web callback ou click to call) pour votre site "
+#~ "internet et ou signature mail. Il offre une mise en relation gratuite et "
+#~ "spontanée pour vos internautes.</p><h3>Comment faire fonctionner Fonetic ?"
+#~ "</h3><ol><li><a class=\"button-primary\" target=\"_BLANK\" href=\"http://"
+#~ "fonetic.fr/index.php?module=Account&action=Login\">Créer gratuitement "
+#~ "votre compte Fonetic - 100 crédits de test offerts</a><br />Vous pouvez "
+#~ "directement utilisez votre compte :<a target=\"_BLANK\" href=\"http://"
+#~ "fonetic.fr/index.php?module=Account&action=Social&provider=facebook"
+#~ "\"><img src=\"http://prestashop1531.netiva.fr/modules/fonetic/img/"
+#~ "facebook.png\" /></a><a target=\"_BLANK\" href=\"http://fonetic.fr/index."
+#~ "php?module=Account&action=Social&provider=google\"><img src=\"http://"
+#~ "prestashop1531.netiva.fr/modules/fonetic/img/google.png\" /></a></"
+#~ "li><li>Suivez la procédure d'inscription, une première clé Fonetic sera "
+#~ "créé à partir du numéro de téléphone que vous indiquerez dans votre "
+#~ "profil utilisateur.</li><li>Dans le tableau <strong>Mes numéros de "
+#~ "téléphone</strong>, configurez votre fuseau horaire & les horaires "
+#~ "d'ouverture de votre numéro (Bouton orange).</li><li>Dans le tableau "
+#~ "<strong>Mes numéros de téléphone</strong>, Créer & personnaliser le "
+#~ "Widget (bouton vert) de votre numéro de téléphone.</li><li>Après avoir "
+#~ "enregistré et prévisualisé votre widget, la clé Fonetic Express sera "
+#~ "générée et affichée en dessous du formulaire. Copier cette clé et "
+#~ "enregistrer-la dans le champs \"Clé Fonetic Express\".</"
+#~ "li><li>Personnaliser votre étiquette via les autres options et </"
+#~ "strong>enregistrer les modifications</strong>. </li><li>Votre module "
+#~ "Fonetic (Prestashop) est maintenant opérationnel ! Nous vous souhaitons "
+#~ "de nombreuses conversions ! :-)</li></ol>"
+
+#~ msgid "Widget de mise en relation"
+#~ msgstr "Widget de mise en relation"
+
+#~ msgid "Legende"
+#~ msgstr ""
+#~ "<h2>Enregistrement de votre widget</h2><p>1 - Inscrivez vous sur <a href="
+#~ "\"http://fonetic.fr\">Fonetic.fr</a>, puis créez votre widget.</p><p>2 - "
+#~ "Collez la portion de code de votre widget dans le champs ci-dessous:</p>"
+
+#~ msgid "Documentation"
+#~ msgstr "Documentation"
 
 #~ msgid "Espace client"
 #~ msgstr "Espace client"
