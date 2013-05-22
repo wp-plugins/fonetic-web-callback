@@ -9,7 +9,7 @@
    Plugin Name: Fonetic Web Callback
    Plugin URI: http://wordpress.org/extend/plugins/fonetic/
    Description: Fonetic is a web call feature for your website that allows your visitors to be called back for free. Get a real leverage for your online conversions !
-   Version: 2.0.0
+   Version: 2.0.1
    Author: <a href="http://www.fonetic.fr/">Fonetic</a>, <a href="http://www.netiva.fr/">Netiva</a>
    Author URI: http://fonetic.fr/
 */
