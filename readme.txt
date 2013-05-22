@@ -64,6 +64,9 @@ Coming soon :)
 
 == Changelog ==
 
+= 2.0.1 =
+*	Fix menu icon and add screenshots
+
 = 2.0.0 =
 *	New version
 
