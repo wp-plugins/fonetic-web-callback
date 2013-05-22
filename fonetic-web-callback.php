@@ -223,12 +223,7 @@ class Fonetic_Web_Callback_Admin {
 
 		echo __('Comment faire fonctionner Fonetic ?', 'fonetic');
 
-		/*
-		echo '
-		<h1>'.$this->title.' - '.__('Widget de mise en relation', 'fonetic').'</h1>
-		<hr />
-		<img style="float:right;" src="'.FONETIC_URL.'images/webcallback.png" />
-		'.__('Description', 'fonetic').'
+		echo '<br />
 		<p>
 			<a href="'.FONETIC_URL.'screenshot-1.jpg" target="_BLANK"><img src="'.FONETIC_URL.'screenshot-1.jpg" style="width:200px;" /></a>
 			<a href="'.FONETIC_URL.'screenshot-2.jpg" target="_BLANK"><img src="'.FONETIC_URL.'screenshot-2.jpg" style="width:200px;" /></a>
@@ -236,7 +231,7 @@ class Fonetic_Web_Callback_Admin {
 			<a href="'.FONETIC_URL.'screenshot-4.jpg" target="_BLANK"><img src="'.FONETIC_URL.'screenshot-4.jpg" style="width:200px;" /></a>
 			<a href="'.FONETIC_URL.'screenshot-5.jpg" target="_BLANK"><img src="'.FONETIC_URL.'screenshot-5.jpg" style="width:200px;" /></a>
 		</p>';
-		*/
+
 	}
 
 	//==============================================================================
